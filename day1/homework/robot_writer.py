@@ -7,7 +7,7 @@ total_unemployment_2009 = 5.9
 total_unemployment_2014 = 8.0
 
 def write_story(municipality, unemployment_2009, unemployment_2014):
-    text = "Gör mig till en notis"
+    text = "GTest"
     print(text)
     # Skriv kod här!
 
