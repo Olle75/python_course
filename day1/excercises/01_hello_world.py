@@ -1,4 +1,5 @@
 # coding: utf-8
 
-print "Hello world"
-print "Hej världen"
+print("Hello, World!")
+print("Hej världen")
+print("Nu funkar det!")
