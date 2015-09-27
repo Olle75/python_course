@@ -7,6 +7,7 @@ total_unemployment_2014 = 1.9
 riket_unemployment_2009 = 3.8
 riket_unemployment_2014 = 10.9
 diff_riket2014 = riket_unemployment_2014 - total_unemployment_2014
+
 name = "Olle Carlsson"
 municipality = "Hägersten"
 
@@ -17,19 +18,13 @@ def write_story(municipality, unemployment_2009, unemployment_2014):
 
   if unemployment_2014 > unemployment_2009:
     print("Det var en ökning med %s procent.") % (abs(diff))
-  elif unemployment_2014 < unemployment_2009:
-    print("Det var en minskning med %s procent.") % (abs(diff))
-  elif unemployment_2014 == unemployment_2009:
-    print("Det var ingen skillnad")
-
-
-  if unemployment_2014 > unemployment_2009:
     print("Alltså kan man konstatera att finanskrisen drabbade %s hårt." % (municipality))
   elif unemployment_2014 < unemployment_2009:
-      print("Alltså kan man konstatera att %s klarade finanskrisen alldeles utmärkt." % (municipality))
+    print("Det var en minskning med %s procent.") % (abs(diff))
+    print("Alltså kan man konstatera att %s klarade finanskrisen alldeles utmärkt." % (municipality))
   elif unemployment_2014 == unemployment_2009:
-      print("Finanskrisen påverkade alltså inte %s alls." % (municipality))     
-
+    print("Det var ingen skillnad")
+    print("Finanskrisen påverkade alltså inte %s alls." % (municipality))
 
   if unemployment_2014 > riket_unemployment_2014:
     print("Arbetslösheten i %s var %s procent högre jämfört med hela riket 2014.") % (municipality, abs(diff_riket2014)) 
@@ -44,7 +39,6 @@ def write_story(municipality, unemployment_2009, unemployment_2014):
     print("%s är en förlorare i krisen.") % (municipality)
   elif unemployment_2014 == riket_unemployment_2014:
     print("%s klarar krisen som alla andra.") % (municipality)
-
 
 
 write_story("Stockholm", 7.1, 6.6) 
