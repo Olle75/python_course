@@ -2,11 +2,22 @@
 
 #Olles hemläxa!
 
+<<<<<<< HEAD
 total_unemployment_2009 = 2.9
 total_unemployment_2014 = 1.9
 riket_unemployment_2009 = 3.8
 riket_unemployment_2014 = 10.9
 diff_riket2014 = riket_unemployment_2014 - total_unemployment_2014
+=======
+total_unemployment_2009 = 5.9
+total_unemployment_2014 = 8.0
+
+def write_story(municipality, unemployment_2009, unemployment_2014):
+    text = "Gör mig till en notis"
+    print("Nu har jag löst uppfiften!")
+    print(text)
+    # Skriv kod här!
+>>>>>>> 0b75cc4a73af7947e0872f98e2a85a320a992abd
 
 name = "Olle Carlsson"
 municipality = "Hägersten"
