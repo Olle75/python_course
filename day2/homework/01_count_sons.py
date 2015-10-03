@@ -28,55 +28,80 @@ från riksdagsledamoter.py.
 counter = 0
 
 for row in data:
-	if "son" in row["name"]:
+	if "son," in row["name"] or "son " in row["name"]:
 		print("Wow, ett son-namn!")
 		counter = counter + 1
 
 print("Det finns %s ledamöter med son-namn i listan.") % (counter)
-
 """
+
+
+
 # Här följer ett försök att räkna antalet son-namn per parti.
 # När jag kör dem en och en får jag fram det totala antalet namn för varje parti (ej S och M som bråkar).
-# Kör jag dem till sammans blir siffrorna galna - pga loopningen antar jag).
+# Kör jag dem tillsammans blir siffrorna galna - pga loopningen antar jag).
 # Nästa steg blir att sålla ut son-namnen i varje parti...
  
-for row in data:
-	if "V" in row["party"]:
-		counter = counter + 1
-print("Det finns %s V i listan.") % (counter)
+"""
 
+"""
 for row in data:
-	if "S" in row["party"]:
-		counter = counter + 1
-print("Det finns %s S i listan.") % (counter) #Här blir det ju knasigt då även SD räknas in.
+	if "V" in row["party"]:	
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
+print("Det finns %s son-namn i listan.") % (counter)
+"""
 
+"""
+for row in data:
+	if "S" == "S" in row["party"]:
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
+print("Det finns %s son-namn i listan.") % (counter)
+"""
+"""
 for row in data:
 	if "MP" in row["party"]:
-		counter = counter + 1
-print("Det finns %s MP i listan.") % (counter)
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
+print("Det finns %s son-namn i listan.") % (counter)
 
+"""
+
+"""
 for row in data:
 	if "C" in row["party"]:
-		counter = counter + 1
-print("Det finns %s C i listan.") % (counter)
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
 
+print("Det finns %s son-namn i listan.") % (counter)
+"""
+
+"""
 for row in data:
 	if "FP" in row["party"]:
-		counter = counter + 1
-print("Det finns %s FP i listan.") % (counter)
-
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
+print("Det finns %s son-namn i listan.") % (counter)
+"""
+"""
 for row in data:
 	if "KD" in row["party"]:
-		counter = counter + 1
-print("Det finns %s KD i listan.") % (counter)
-
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
+print("Det finns %s son-namn i listan.") % (counter)
+"""
+"""
 for row in data:
-	if "M" in row["party"]:
+	if "M" == "M" in row["party"]:
+		if "son," in row["name"] or "son " in row["name"]:
 		counter = counter + 1
-print("Det finns %s M i listan.") % (counter) #Här blir det också knasigt då även MP räknas in.
-
+print("Det finns %s son-namn i listan.") % (counter)
+"""
+"""
 for row in data:
 	if "SD" in row["party"]:
-		counter = counter + 1
-print("Det finns %s SD i listan.") % (counter)
+		if "son," in row["name"] or "son " in row["name"]:
+			counter = counter + 1
+print("Det finns %s son-namn i listan.") % (counter)
 """
